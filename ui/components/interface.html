@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="prefetch" href="./interface.js" as="script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="draggable-handle" id="draggable-handle">
+      <div class="handle-line"></div>
+      <div class="handle-line"></div>
+      <div class="handle-line"></div>
+      <div class="handle-line"></div>
+    </div>
+    <div class="webview-container" id="webview-container">
+      <div class="loading-overlay" id="loading-overlay">
+          <span class="material-icons" style="color: white; font-size: 48px">hourglass_empty</span>
+      </div>
+      <webview id="webview" src="https://www.startpage.com/do/mypage.pl?prfe=5b4a256e9292c704653cbb68647d7b094bcf4054ffbd4ebe9ca01df1674c5a64489291fbf0b1a6775510c2c5e70cb511d48d7efe3407648ef0118a60fdd9fd75170dd66c9ace35763c9a99c5" webpreferences="nativeWindowOpen=true"></webview>
+    </div>
+    <div class="url-bar-container glassmorphism">
+      <div class="nav-button" id="back-button">
+          <span class="material-icons">arrow_back</span>
+      </div>
+      <div class="url-bar" id="url-bar">https://www.startpage.com/</div>
+      <div class="nav-button" id="forward-button">
+          <span class="material-icons">arrow_forward</span>
+      </div>
+      <div class="nav-button" id="home-button">
+          <span class="material-icons">home</span>
+      </div>
+      <div class="nav-button" id="adblock-button">
+          <span class="material-icons" id="adblock-icon" style="font-size: 18px">shield</span>
+      </div>
+    </div>
+    <script src="./interface.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+{
+     "name": "Linkr",
+     "version": "1.0.0",
+     "main": "main.js",
+     "repository": "github:ytcalifax/linkr",
+     "scripts": {
+          "start": "electron .",
+          "build": "electron-builder",
+          "rebuild": "electron-rebuild -f -w @ghostery/adblocker-electron active-win cross-fetch node-gyp"
+     },
+     "dependencies": {
+          "@ghostery/adblocker-electron": "^2.1.1",
+          "active-win": "^8.2.1",
+          "cross-fetch": "^4.0.0",
+          "node-gyp": "^11.0.0"
+     },
+     "devDependencies": {
+          "@electron/rebuild": "^3.7.1",
+          "electron": "^33.2.1",
+          "electron-builder": "^25.1.8"
+     },
+     "build": {
+          "appId": "eu.ninetyeight.linkr",
+          "productName": "Linkr",
+          "files": [
+               "main.js",
+               "preload.js",
+               "ui/**/*",
+               "node_modules/**/**",
+               "package.json"
+          ],
+          "directories": {
+               "buildResources": "build"
+          },
+          "win": {
+               "target": "nsis",
+               "icon": "./ui/graphics/icons/linkr_icon.ico"
+          },
+          "mac": {
+               "target": "dmg",
+               "icon": "./ui/graphics/icons/linkr_icon.icns"
+          },
+          "linux": {
+               "target": "AppImage",
+               "icon": "./ui/graphics/icons/linkr_icon.png"
+          }
+     }
+}
