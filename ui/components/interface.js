@@ -26,7 +26,7 @@ let processUrlMap = {};
 // Fetch processUrlMap from a Gist
 const fetchProcessUrlMap = async () => {
   try {
-    const response = await fetch('https://gist.githubusercontent.com/ytcalifax/5ded18339ad737416f16f7e455bfba8d/raw/48e62359a5c5803d9386c1093239cc349047d9fa/linkr.json');
+    const response = await fetch('https://raw.githubusercontent.com/ytcalifax/linkr/refs/heads/main/.data/web.json');
     if (response.ok) {
       processUrlMap = await response.json();
     } else {
