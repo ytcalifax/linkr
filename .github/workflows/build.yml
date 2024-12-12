@@ -19,9 +19,6 @@ jobs:
             arch: x64
           - os: macos-latest
             platform: mac
-            arch: x64
-          - os: macos-latest
-            platform: mac
             arch: arm64
           - os: ubuntu-latest
             platform: linux
@@ -113,7 +110,6 @@ jobs:
           echo "- Windows x64 Installer (.exe)" >> $GITHUB_ENV
           echo "" >> $GITHUB_ENV
           echo "### macOS" >> $GITHUB_ENV
-          echo "- macOS Intel/x64 (.dmg)" >> $GITHUB_ENV
           echo "- macOS Apple Silicon/ARM64 (.dmg)" >> $GITHUB_ENV
           echo "" >> $GITHUB_ENV
           echo "### Linux" >> $GITHUB_ENV
