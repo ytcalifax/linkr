@@ -18,8 +18,8 @@ async function initializeAdblocker() {
       "https://easylist.to/easylist/easyprivacy.txt",
       "https://easylist.to/easylist/easylist.txt",
       "https://stanev.org/abp/adblock_bg.txt",
-      "https://pastebin.com/raw/Yi8kSPta",
-      "https://pastebin.com/raw/RM33Eegi",
+      "https://pastebin.com/raw/rgKCHCbt",
+      "https://pastebin.com/raw/cQBnz3B4",
     ]);
     blocker.enableBlockingInSession(session.defaultSession);
   } catch (error) {
